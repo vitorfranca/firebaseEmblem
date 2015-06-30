@@ -1,11 +1,5 @@
-app.controller('testCtrl', function($scope, characters) {
-    $scope.data = characters.all;
-
-    $scope.sendToFirebase = function(data) {
-        $scope.data.$add($scope.newData);
-        $scope.newData = '';
-    };
-    $scope.remove = function(val) {
-        $scope.data.$remove(val);
-    };
+app.controller('testCtrl', function($scope, characters, skills, classes) {
+    $scope.characters = characters.all;
+    $scope.skills = skills.all;
+    $scope.classes = classes.all;
 });
