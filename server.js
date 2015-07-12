@@ -3,6 +3,8 @@ var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
 var livereload = require('express-livereload');
+var modRewrite = require('connect-modrewrite');
+
 var app = express();
 
 livereload(app);
@@ -12,6 +14,8 @@ livereload(app);
 // </script>
 
 app.set('port', (process.env.PORT || 3000));
+
+app.use(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$ /index.html [L]']));
 
 app.use('/', express.static(path.join(__dirname, '')));
 // app.use('/', express.static(path.join(__dirname, 'bower_components')));
