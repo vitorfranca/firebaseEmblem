@@ -1,0 +1,63 @@
+<html>
+<head>
+<script>
+document.write('<script src="http://' + (location.host || 'localhost')
+.split(':')[0] + ':35729/livereload.js"></' + 'script>')
+</script>
+<base href="/" />
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+
+</head>
+
+<body>
+  <div ng-app='test' ng-controller='testCtrl'>
+    <div ui-view></div>
+
+    <h1>Fire Emblem</h1>
+
+    <div style="float:left; border-right: 1px solid #666;">
+      <h2 style="margin: 10px 30px;">Characters</h2>
+      <ul ng-repeat="val in characters">
+        <li>
+          <a ui-sref="characters({name: val.name})">
+            {{val.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div style="float:left; border-right: 1px solid #666;">
+      <h2 style="margin: 10px 30px;">Skills</h2>
+      <ul ng-repeat="val in skills">
+        <li>{{val.name}}</li>
+      </ul>
+    </div>
+
+    <div style="float:left;">
+      <h2 style="margin: 10px 30px;">Classes</h2>
+      <ul ng-repeat="val in classes">
+        <li>{{val.name}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <script src="routes/characters.js"></script>
+
+  <script src="services/firebase.js"></script>
+  <script src="services/characters.js"></script>
+  <script src="services/skills.js"></script>
+  <script src="services/classes.js"></script>
+
+  <script src="components/character.js"></script>
+
+  <script src="testCtrl.js"></script>
+</body>
+</html>
