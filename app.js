@@ -1,4 +1,10 @@
 var app = angular.module('test', [
-    "ngRoute",
-    "firebase"
-]);
+  "firebase",
+  "ui.router"
+])
+.config(function($locationProvider, $urlRouterProvider) {
+  $locationProvider.html5Mode({
+    enabled: true
+  });
+  $urlRouterProvider.otherwise("home");
+});
