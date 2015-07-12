@@ -1,9 +1,9 @@
-app.service('firebase', function($firebaseArray, $firebaseObject) {
+app.service('firebase', function($firebaseObject) {
   var ref = new Firebase("https://glowing-torch-2079.firebaseio.com/");
 
   this.getList = function(child) {
     var childRef = ref.child(child);
-    return $firebaseArray(childRef);
+    return $firebaseObject(childRef);
   };
 
   this.get = function (path) {

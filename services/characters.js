@@ -12,13 +12,9 @@ app.service('characters', function(firebase) {
   };
 
   self.get = function(name) {
-    if (self.all && self.all.length) {
-      return _(self.all).findWhere({
-        name: name
-      });
-    } else {
-      return firebase.get('characters/'+name);
-    }
+    return self.all[name] ?
+      self.all[name] : 
+      firebase.get('characters/'+name);
   };
 
   return self;
