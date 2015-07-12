@@ -1,26 +1,5 @@
 <h1>Fire Emblem</h1>
 
-<div style="float:left; border-right: 1px solid #666;">
-  <h2 style="margin: 10px 30px;">Characters</h2>
-  <ul ng-repeat="val in characters">
-    <li>
-      <a ui-sref="characters({name: val.name})">
-        {{val.name}}
-      </a>
-    </li>
-  </ul>
-</div>
-
-<div style="float:left; border-right: 1px solid #666;">
-  <h2 style="margin: 10px 30px;">Skills</h2>
-  <ul ng-repeat="val in skills">
-    <li>{{val.name}}</li>
-  </ul>
-</div>
-
-<div style="float:left;">
-  <h2 style="margin: 10px 30px;">Classes</h2>
-  <ul ng-repeat="val in classes">
-    <li>{{val.name}}</li>
-  </ul>
-</div>
+<a ui-sref="characters.list">Characters</a>
+<a ui-sref="skills">Skills</a>
+<a ui-sref="classes">Classes</a>

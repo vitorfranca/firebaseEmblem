@@ -1,9 +1,11 @@
 <html>
 <head>
+
 <script>
 document.write('<script src="http://' + (location.host || 'localhost')
 .split(':')[0] + ':35729/livereload.js"></' + 'script>')
 </script>
+
 <base href="/" />
 
 <script src="bower_components/angular/angular.min.js"></script>
@@ -15,7 +17,7 @@ document.write('<script src="http://' + (location.host || 'localhost')
 
 <link rel="stylesheet" href="assets/css/base.css" media="screen" title="no title" charset="utf-8">
 
-<title>Fire Emblem</title>
+<title>Fire Emblem - Awakening</title>
 </head>
 
 <body>
@@ -27,6 +29,8 @@ document.write('<script src="http://' + (location.host || 'localhost')
 
   <script src="states/home/homeState.js"></script>
   <script src="states/characters/characterState.js"></script>
+  <script src="states/characters/list/charactersListState.js"></script>
+  <script src="states/characters/details/charactersDetailsState.js"></script>
 
   <script src="services/firebase.js"></script>
   <script src="services/characters.js"></script>
