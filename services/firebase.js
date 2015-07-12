@@ -1,10 +1,14 @@
-app.service('firebase', function($firebaseArray) {
-    var ref = new Firebase("https://glowing-torch-2079.firebaseio.com/");
+app.service('firebase', function($firebaseArray, $firebaseObject) {
+  var ref = new Firebase("https://glowing-torch-2079.firebaseio.com/");
 
-    this.getList = function(child) {
-        var childRef = ref.child(child);
-        return $firebaseArray(childRef);
-    };
+  this.getList = function(child) {
+    var childRef = ref.child(child);
+    return $firebaseArray(childRef);
+  };
 
-    return this;
+  this.get = function (path) {
+    return $firebaseObject(ref.child(path));
+  }
+
+  return this;
 });
