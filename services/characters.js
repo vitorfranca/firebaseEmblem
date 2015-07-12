@@ -1,15 +1,21 @@
 app.service('characters', function(firebase) {
-    var self = this;
+  var self = this;
 
-    self.all = firebase.getList('characters');
+  self.all = firebase.getList('characters');
 
-    self.remove = function(val) {
-        return self.all.$remove(val);
-    };
+  self.remove = function(val) {
+    return self.all.$remove(val);
+  };
 
-    self.add = function(val) {
-        return self.all.$add(val);
-    };
+  self.add = function(val) {
+    return self.all.$add(val);
+  };
 
-    return self;
+  self.get = function(name) {
+    return _(self.all).findWhere({
+      name: name
+    });
+  };
+
+  return self;
 });
