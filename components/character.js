@@ -7,4 +7,5 @@ app.directive('character', function() {
 })
 .controller('characterComponentCtrl', function($scope, characters, $stateParams){
   console.log(characters.get($stateParams.name));
+  $scope.character = characters.get($stateParams.name);
 });
