@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "scss --watch scss:assets/css",
+    "prestart": "npm run sass &",
     "start": "node server.js"
   },
   "repository": {
