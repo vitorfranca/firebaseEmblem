@@ -1,8 +1,8 @@
 app.config(function($stateProvider) {
   $stateProvider
-    .state('root.characters', {
+    .state('root', {
       abstract: true,
-      template: '<ui-view/>',
-      url: "/characters"
+      templateUrl: '/states/root.html',
+      url: ""
     });
 });

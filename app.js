@@ -6,5 +6,5 @@ var app = angular.module('test', [
   $locationProvider.html5Mode({
     enabled: true
   });
-  $urlRouterProvider.otherwise("home");
+  $urlRouterProvider.otherwise("/");
 });
