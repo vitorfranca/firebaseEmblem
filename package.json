@@ -4,10 +4,12 @@
     "description": "",
     "main": "app.js",
     "scripts": {
+        "postinstall": "bower install",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "scss --watch app/scss:assets/css &",
-        "watchJs": "bash scripts/watchJs.sh &",
-        "prestart": "npm run sass; npm run watchJs",
+        "sass": "scss --update app/scss:assets/css",
+        "watchJs": "bash scripts/watchJs.sh",
+        "build": "npm run sass & bash scripts/concatJs.sh",
+        "prestart": "npm run build",
         "start": "node server.js"
     },
     "repository": {
