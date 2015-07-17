@@ -11,5 +11,12 @@ app.service('skills', function(firebase) {
         return self.all.$add(val);
     };
 
+    self.get = function(name) {
+        return self.all.$loaded()
+            .then(function(data) {
+                return data[name];
+            });
+    };
+
     return self;
 });
