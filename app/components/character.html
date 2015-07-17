@@ -7,12 +7,22 @@
     <span ng-show="character.initialClass">- {{character.initialClass}}</span>
 </h1>
 
-<div ng-show="character.classSet">
+<div ng-show="classSet">
     <h2>Class set</h2>
     <ul>
         <li ng-repeat="class in classSet"
             ui-sref="root.classes.details({ name: class })">
             {{class}}
+        </li>
+    </ul>
+</div>
+
+<div ng-show="skillSet">
+    <h2>Skill set</h2>
+    <ul>
+        <li ng-repeat="skill in skillSet"
+            ui-sref="root.skills.details({ name: skill.name })">
+            {{skill.name}}
         </li>
     </ul>
 </div>
