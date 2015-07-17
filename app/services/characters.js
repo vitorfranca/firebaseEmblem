@@ -26,11 +26,34 @@ app.service('characters', function(firebase, classes, $q) {
 
             return $q.all(promises).then(function(klasses) {
                 return _.chain(klasses.map(function(klass) {
-                    return [klass.name, klass.promote];
-                })).flatten().compact().uniq().value();
+                        return [klass.name, klass.promote];
+                    }))
+                    .flatten()
+                    .compact()
+                    .uniq()
+                    .value();
             });
         });
     };
+
+    self.getFullSkillSet = function(name) {
+        return self.getFullClassSet(name)
+            .then(function(klasses) {
+                var promises = klasses.map(function(klassName) {
+                    return classes.getSkills(klassName);
+                });
+
+                return $q.all(promises)
+                    .then(function(skills) {
+                        return _.flatten(skills);
+                        return _.chain(skills)
+                            .flatten()
+                            .compact()
+                            .uniq()
+                            .value();
+                    });
+            });
+    }
 
     return self;
 });
