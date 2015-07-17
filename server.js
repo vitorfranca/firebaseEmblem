@@ -8,7 +8,7 @@ var modRewrite = require('connect-modrewrite');
 var app = express();
 
 livereload(app, config = {
-    watchDir: "."
+    watchDir: "assets"
 });
 // <script>
 //   document.write('<script src="http://' + (location.host || 'localhost')
