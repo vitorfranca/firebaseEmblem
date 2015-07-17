@@ -8,4 +8,7 @@ var app = angular.module('test', [
         });
 
         $urlRouterProvider.otherwise("/");
+    })
+    .run(function(characters, classes, skills) {
+        console.debug('initializing services...');
     });
