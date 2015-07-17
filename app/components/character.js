@@ -6,5 +6,11 @@ app.directive('character', function() {
     };
 })
     .controller('characterComponentCtrl', function($scope, characters, $stateParams) {
-        $scope.character = characters.get($stateParams.name);
+        characters.get($stateParams.name).then(function(data) {
+            $scope.character = data;
+        });
+
+        characters.getFullClassSet($stateParams.name).then(function(data) {
+            $scope.classSet = data;
+        });
     });
