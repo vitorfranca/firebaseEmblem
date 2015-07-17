@@ -1,4 +1,4 @@
-app.service('classes', function(firebase, skills) {
+app.service('classes', function(firebase, skills, $q) {
     var self = this;
 
     self.all = firebase.getList('classes');
@@ -19,10 +19,16 @@ app.service('classes', function(firebase, skills) {
     };
 
     self.getSkills = function(className) {
-        var klass = self.get(className);
-        return klass.skills.map(function(skill) {
-            return skills.get(skill);
-        });
+        return self.get(className).then(function(klass) {
+            var promises = klass.skills.map(function(skill) {
+                return skills.get(skill);
+            });
+
+            return $q.all(promises)
+                .then(function(skillz) {
+                    return skillz;
+                });
+        });;
     };
 
     return self;
