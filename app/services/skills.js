@@ -1,4 +1,6 @@
-app.service('skills', function(firebase) {
+'use strict';
+
+module.exports = function(firebase) {
     var self = this;
 
     self.all = firebase.getList('skills');
@@ -19,4 +21,4 @@ app.service('skills', function(firebase) {
     };
 
     return self;
-});
+}

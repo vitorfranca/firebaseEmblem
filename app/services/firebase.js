@@ -1,4 +1,6 @@
-app.service('firebase', function($firebaseObject) {
+'use strict';
+
+module.exports = function($firebaseObject) {
     var ref = new Firebase("https://glowing-torch-2079.firebaseio.com/");
 
     this.getList = function(child) {
@@ -11,4 +13,4 @@ app.service('firebase', function($firebaseObject) {
     }
 
     return this;
-});
+}
