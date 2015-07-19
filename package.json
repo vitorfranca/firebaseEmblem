@@ -4,11 +4,12 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "postinstall": "bower install",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "scss --update app/scss:assets/css",
-        "watchJs": "bash scripts/watchJs.sh",
-        "build": "npm run sass & bash scripts/concatJs.sh",
+        "sass": "scss --watch app/scss:assets/css app/components:assets/css",
+        "vendorJs": "browserify vendor.js > assets/js/vendor.js",
+        "bundleJs": "browserify main.js > assets/js/bundle.js",
+        "watchJs": "watchify main.js -o assets/js/bundle.js",
+        "build": "npm run sass & npm run watchJs & npm run vendorJs",
         "prestart": "npm run build",
         "start": "node server.js"
     },
@@ -23,11 +24,22 @@
     },
     "homepage": "https://github.com/vitorfranca/firebaseEmblem#readme",
     "dependencies": {
+        "angular": "^1.4.3",
+        "angularfire": "^1.1.2",
         "body-parser": "^1.13.2",
-        "express": "^4.13.1"
+        "express": "^4.13.1",
+        "firebase": "^2.2.7",
+        "ui-router": "0.0.1",
+        "underscore": "^1.8.3"
     },
     "devDependencies": {
         "connect-modrewrite": "^0.8.1",
-        "express-livereload": "0.0.24"
+        "express-livereload": "0.0.24",
+        "watchify": "^3.3.0"
+    },
+    "browser": {
+        "angular": "./node_modules/angular/angular.min.js",
+        "angularfire": "./node_modules/angularfire/dist/angularfire.min.js",
+        "underscore": "./node_modules/underscore/underscore-min.js"
     }
 }

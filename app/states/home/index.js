@@ -3,9 +3,8 @@
 module.exports = angular.module('fire-emblem')
     .config(function($stateProvider) {
         $stateProvider
-            .state('root', {
-                abstract: true,
-                templateUrl: '/app/states/root.html',
-                url: ""
+            .state('root.home', {
+                url: "/",
+                templateUrl: "app/states/home/home.html"
             });
     });

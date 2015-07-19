@@ -1,4 +1,6 @@
-app.service('characters', function(firebase, classes, $q) {
+'use strict';
+
+module.exports = function(firebase, classes, $q, _) {
     var self = this;
 
     self.all = firebase.getList('characters');
@@ -56,4 +58,4 @@ app.service('characters', function(firebase, classes, $q) {
     }
 
     return self;
-});
+}
