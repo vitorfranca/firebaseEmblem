@@ -3,14 +3,15 @@
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
+    "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "scss --watch app/scss:assets/css app/components:assets/css",
-        "watchCss": "catw assets/css/**/*.css -o assets/css/app.css",
-        "vendorJs": "watchify vendor.js -o assets/js/vendor.js",
-        "watchJs": "watchify main.js -o assets/js/bundle.js",
-        "build": "npm run sass & npm run watchCss & npm run watchJs & npm run vendorJs &",
-        "prestart": "npm run build",
+        "sass": "scss --watch app:app/css",
+        "watch-css": "gulp watch-css",
+        "vendor-js": "watchify vendor.js -o assets/js/vendor.js",
+        "watch-js": "watchify main.js -o assets/js/bundle.js",
+        "watch": "npm run sass & npm run watch-css & npm run watch-js & npm run vendor-js &",
+        "prestart": "npm run watch",
         "start": "node server.js"
     },
     "repository": {
@@ -33,9 +34,13 @@
         "underscore": "^1.8.3"
     },
     "devDependencies": {
-        "catw": "^1.0.1",
         "connect-modrewrite": "^0.8.1",
         "express-livereload": "0.0.24",
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-cssmin": "^0.1.7",
+        "gulp-strip-css-comments": "^1.1.0",
+        "gulp-watch": "^4.3.3",
         "watchify": "^3.3.0"
     },
     "browser": {

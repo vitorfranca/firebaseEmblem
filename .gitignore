@@ -1,6 +1,7 @@
 bower_components
 node_modules
 .sass-cache
+app/css
 assets/css
 assets/js
 *.log
