@@ -17,7 +17,7 @@ function characterComponentCtrl($scope, characters, $stateParams, classes) {
 angular.module('fire-emblem')
     .directive('character', function() {
         return {
-            templateUrl: '/app/components/character.html',
+            templateUrl: '/app/components/character/character.html',
             controller: characterComponentCtrl,
             replace: false
         };

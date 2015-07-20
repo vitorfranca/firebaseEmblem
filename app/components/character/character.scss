@@ -1,0 +1,40 @@
+@import "../../scss/colors.scss";
+
+character {
+	display: block;
+	padding: 5px;
+
+	.portrait {
+		background-color: $lighter-brown;
+		border: 2px solid $dark-brown;
+		margin: 0 5px;
+		float: left;
+	}
+
+	.character-header {
+		margin: 20px 50px;
+		text-align: center;
+
+		.name {
+			background-color: $darker-blue;
+			border: 2px solid $old-gold;
+			border-style: solid;
+			border-radius: 30px;
+			box-shadow: 0 0 2px $darker-blue;
+			color: $lighter-brown;
+			margin: 6px;
+			min-width: 150px;
+			padding: 6px 25px;
+			text-transform: uppercase;
+		}
+
+		.class {
+			position: relative;
+			top: 12px;
+		}
+	}
+
+	.class-set {
+		clear: both;
+	}
+}

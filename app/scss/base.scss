@@ -1,4 +1,32 @@
+@import "colors.scss";
+
 html,
 body {
-  font-family: arial;
+	background-color: $medium-brown;
+	color: $darker-brown;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
 }
+
+h1, h2, h3, h4, h5 {
+	padding: 0;
+	margin: 5px 0;
+}
+
+ul {
+	padding: 0;
+	margin: 6px;
+
+	li {
+		background-color: $lighter-brown;
+		display: inline-block;
+		padding: 5px 8px;
+		margin: 1px;
+		list-style: none;
+	}
+}
+
+a { text-decoration: none; }
+a:link, a:visited { color: $medium-blue; }
+a:hover, a:active { color: $medium-green; }

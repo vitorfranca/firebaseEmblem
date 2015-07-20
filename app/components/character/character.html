@@ -1,13 +1,18 @@
 <div>
-    <img src="/assets/img/characters/{{character.name}}Icon.png" alt="" />
+    <img class="portrait" src="/assets/img/characters/{{character.name}}Icon.png" alt="" />
 </div>
 
-<h1 ng-show="character.name">
-    {{character.name}}
-    <span ng-show="character.initialClass">- {{character.initialClass}}</span>
-</h1>
+<div class="character-header">
+    <h1 ng-show="character.name">
+        <span class="name">{{character.name}}</span>
+    </h1>
 
-<div ng-show="classSet">
+    <span class="class" ng-show="character.initialClass">
+        {{character.initialClass}}
+    </span>
+</div>
+
+<div class="class-set" ng-show="classSet">
     <h2>Class set</h2>
     <ul>
         <li ng-repeat="class in classSet"
@@ -32,7 +37,7 @@
     <ul>
         <li ng-repeat="(key, val) in character.baseStats">
             {{key}}: {{val}}
-            <span ng-if="character.modifiers[key]">+ {{character.modifiers[key]}}</span>
+            <!-- <span ng-if="character.modifiers[key]">+ {{character.modifiers[key]}}</span> -->
         </li>
     </ul>
 </div>
@@ -46,14 +51,14 @@
     </ul>
 </div>
 
-<!-- <div ng-show="character.modifiers">
+<div ng-show="character.modifiers">
     <h2>Modifiers</h2>
     <ul>
         <li ng-repeat="(key, val) in character.modifiers">
             {{key}}: {{val}}
         </li>
     </ul>
-</div> -->
+</div>
 
 <div ng-show="character.children">
     <h2>Children</h2>

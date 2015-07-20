@@ -6,10 +6,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "sass": "scss --watch app/scss:assets/css app/components:assets/css",
-        "vendorJs": "browserify vendor.js > assets/js/vendor.js",
-        "bundleJs": "browserify main.js > assets/js/bundle.js",
+        "watchCss": "catw assets/css/**/*.css -o assets/css/app.css",
+        "vendorJs": "watchify vendor.js -o assets/js/vendor.js",
         "watchJs": "watchify main.js -o assets/js/bundle.js",
-        "build": "npm run sass & npm run watchJs & npm run vendorJs",
+        "build": "npm run sass & npm run watchCss & npm run watchJs & npm run vendorJs &",
         "prestart": "npm run build",
         "start": "node server.js"
     },
@@ -33,6 +33,7 @@
         "underscore": "^1.8.3"
     },
     "devDependencies": {
+        "catw": "^1.0.1",
         "connect-modrewrite": "^0.8.1",
         "express-livereload": "0.0.24",
         "watchify": "^3.3.0"
