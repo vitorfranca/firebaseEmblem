@@ -11,7 +11,7 @@ body {
 
 h1, h2, h3, h4, h5 {
 	padding: 0;
-	margin: 5px 0;
+	margin: 10px;
 }
 
 ul {
@@ -28,5 +28,7 @@ ul {
 }
 
 a { text-decoration: none; }
-a:link, a:visited { color: $medium-blue; }
-a:hover, a:active { color: $medium-green; }
+a:link, a:visited, [ui-sref] { color: $medium-blue; }
+a:hover, a:active, [ui-sref]:hover { color: $medium-green; }
+
+[ui-sref], [ng-click] { cursor: pointer };

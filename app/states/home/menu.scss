@@ -1,0 +1,18 @@
+@import "../../scss/colors.scss";
+
+.menu {
+	background-color: $lighter-brown;
+	border-bottom: 1px solid $medium-brown;
+	box-shadow: 0 0 10px $medium-brown;
+	margin-bottom: 20px;
+
+	a {
+		border-right: 1px solid $dark-brown;
+		display: inline-block;
+		padding: 15px 20px 15px 15px;
+	}
+
+	a:last-child {
+		border: none;
+	}
+}
