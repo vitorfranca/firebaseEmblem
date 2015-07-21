@@ -3,8 +3,8 @@
 module.exports = angular.module('fire-emblem')
     .config(function($stateProvider) {
         $stateProvider
-            .state('root.characters.details', {
+            .state('root.skills.details', {
                 url: "/name/:name",
-                templateUrl: "/app/states/characters/details/character.html"
+                templateUrl: "/app/states/skills/details/skill.html"
             });
     });
