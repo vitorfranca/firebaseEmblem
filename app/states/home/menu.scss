@@ -1,18 +1,26 @@
 @import "../../scss/colors.scss";
 
+body {
+	margin-top: 60px;
+}
+
 .menu {
 	background-color: $lighter-brown;
 	border-bottom: 1px solid $medium-brown;
-	box-shadow: 0 0 10px $medium-brown;
+	box-shadow: 0 1px 6px $dark-brown;
 	margin-bottom: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 
 	a {
 		border-right: 1px solid $dark-brown;
 		display: inline-block;
-		padding: 15px 20px 15px 15px;
+		padding: 10px 20px 10px 15px;
 	}
 
-	a:last-child {
-		border: none;
-	}
+	// a:last-child {
+	// 	border: none;
+	// }
 }
