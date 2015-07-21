@@ -5,6 +5,6 @@ module.exports = angular.module('fire-emblem')
         $stateProvider
             .state('root.characters.details', {
                 url: "/name/:name",
-                templateUrl: "/app/states/characters/characters.html"
+                templateUrl: "/app/states/characters/details/characters.html"
             });
     });
