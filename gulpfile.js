@@ -18,10 +18,8 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('./assets/css/'));
 });
 
-// Cria a TASK padrão, esta linha será processada quando o comando "GULP" for executado
 gulp.task('default', ['minify-css']);
 
-// Cria a TASK de verificar em tempo real alterações, se detectar alguma alteração, será processado o comando relativo ao arquivo
 gulp.task('watch-css', function() {
     gulp.watch(css, ['minify-css']);
 });

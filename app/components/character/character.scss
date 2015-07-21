@@ -1,0 +1,19 @@
+character {
+    display: flex;
+
+    .card {
+        flex: 0 1 auto;
+        max-height: 200px;
+
+        .card-image {
+            .card-title {
+                color: #eee;
+                background: rgba(0, 0, 0, 0.7);
+                font-size: 18px;
+                line-height: 18px;
+                right: 0;
+                padding: 10px;
+            }
+        }
+    }
+}
