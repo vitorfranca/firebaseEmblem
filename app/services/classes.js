@@ -3,7 +3,9 @@
 module.exports = function(firebase, skills, $q) {
     var self = this;
 
-    self.all = firebase.getList('classes');
+    self.all = firebase.getList('classes').then(function(data) {
+        self.all = data;
+    });
 
     self.remove = function(val) {
         return self.all.$remove(val);

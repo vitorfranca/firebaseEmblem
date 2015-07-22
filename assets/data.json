@@ -1,0 +1,1502 @@
+{
+  "characters" : {
+    "Anna" : {
+      "classSet" : [ "Thief", "Archer", "Mage" ],
+      "initialClass" : "Trickster",
+      "name" : "Anna",
+      "sex" : "Female"
+    },
+    "Avatar" : {
+      "name" : "Avatar"
+    },
+    "Basilio" : {
+      "classSet" : [ "Fighter", "Barbarian", "Knight" ],
+      "initialClass" : "Warrior",
+      "name" : "Basilio",
+      "sex" : "Male"
+    },
+    "Brady" : {
+      "initialClass" : "Priest",
+      "name" : "Brady",
+      "sex" : "Male"
+    },
+    "Cherche" : {
+      "children" : [ "Gerome" ],
+      "classSet" : [ "Wyvern Rider", "Troubadour", "Cleric" ],
+      "initialClass" : "Wyvern Rider",
+      "name" : "Cherche",
+      "sex" : "Female"
+    },
+    "Chrom" : {
+      "baseStats" : {
+        "def" : 7,
+        "hp" : 20,
+        "lck" : 5,
+        "mag" : 1,
+        "mov" : 6,
+        "res" : 1,
+        "skl" : 8,
+        "spd" : 8,
+        "str" : 7
+      },
+      "children" : [ "Lucina" ],
+      "classSet" : [ "Lord", "Cavalier", "Archer" ],
+      "growthRates" : {
+        "def" : 0.3,
+        "hp" : 0.4,
+        "lck" : 0.55,
+        "mag" : 0.35,
+        "res" : 0.2,
+        "skl" : 0.35,
+        "spd" : 0.35,
+        "str" : 0.4
+      },
+      "initialClass" : "Lord",
+      "marriable" : [ "Avatar", "Sully", "Sumia", "Maribelle", "Olivia" ],
+      "modifiers" : {
+        "def" : -1,
+        "lck" : 1,
+        "mag" : 0,
+        "res" : -1,
+        "skl" : 1,
+        "spd" : 0,
+        "str" : 1
+      },
+      "name" : "Chrom",
+      "sex" : "Male",
+      "supports" : [ "Avatar", "Frederick", "Lissa", "Sully", "Vaike", "Sumia", "Maribelle", "Gaius", "Olivia" ]
+    },
+    "Cordelia" : {
+      "children" : [ "Severa" ],
+      "classSet" : [ "Pegasus Knight", "Mercenary", "Dark Mage" ],
+      "initialClass" : "Pegasus Knight",
+      "name" : "Cordelia",
+      "sex" : "Female"
+    },
+    "Cynthia" : {
+      "initialClass" : "Pegasus Knight",
+      "name" : "Cynthia",
+      "sex" : "Female"
+    },
+    "Donnel" : {
+      "classSet" : [ "Villager", "Fighter", "Mercenary" ],
+      "initialClass" : "Villager",
+      "name" : "Donnel",
+      "sex" : "Male"
+    },
+    "Flavia" : {
+      "classSet" : [ "Mercenary", "Thief", "Knight" ],
+      "initialClass" : "Hero",
+      "name" : "Flavia",
+      "sex" : "Female"
+    },
+    "Frederick" : {
+      "classSet" : [ "Cavalier", "Knight", "Wyvern Rider" ],
+      "initialClass" : "Great Knight",
+      "name" : "Frederick",
+      "sex" : "Male"
+    },
+    "Gaius" : {
+      "classSet" : [ "Thief", "Fighter", "Myrmidon" ],
+      "initialClass" : "Thief",
+      "name" : "Gaius",
+      "sex" : "Male"
+    },
+    "Gerome" : {
+      "initialClass" : "Wyvern Rider",
+      "name" : "Gerome",
+      "sex" : "Male"
+    },
+    "Gregor" : {
+      "classSet" : [ "Mercenary", "Barbarian", "Myrmidon" ],
+      "initialClass" : "Mercenary",
+      "name" : "Gregor",
+      "sex" : "Male"
+    },
+    "Henry" : {
+      "classSet" : [ "Dark Mage", "Barbarian", "Thief" ],
+      "initialClass" : "Dark Mage",
+      "name" : "Henry",
+      "sex" : "Male"
+    },
+    "Inigo" : {
+      "initialClass" : "Mercenary",
+      "name" : "Inigo",
+      "sex" : "Male"
+    },
+    "Kellam" : {
+      "classSet" : [ "Knight", "Thief", "Priest" ],
+      "initialClass" : "Knight",
+      "name" : "Kellam",
+      "sex" : "Male"
+    },
+    "Kjelle" : {
+      "initialClass" : "Knight",
+      "name" : "Kjelle",
+      "sex" : "Female"
+    },
+    "Laurent" : {
+      "initialClass" : "Mage",
+      "name" : "Laurent",
+      "sex" : "Male"
+    },
+    "Libra" : {
+      "classSet" : [ "Priest", "Mage", "Dark Mage" ],
+      "initialClass" : "War Monk",
+      "name" : "Libra",
+      "sex" : "Male"
+    },
+    "Lissa" : {
+      "children" : [ "Owain" ],
+      "classSet" : [ "Cleric", "Pegasus Knight", "Troubadour" ],
+      "initialClass" : "Cleric",
+      "name" : "Lissa",
+      "sex" : "Female"
+    },
+    "Lon'qu" : {
+      "classSet" : [ "Myrmidon", "Thief", "Wyvern Rider" ],
+      "initialClass" : "Myrmidon",
+      "name" : "Lon'qu",
+      "sex" : "Male"
+    },
+    "Lucina" : {
+      "initialClass" : "Lord",
+      "name" : "Lucina",
+      "sex" : "Female"
+    },
+    "Maribelle" : {
+      "children" : [ "Brady" ],
+      "classSet" : [ "Troubadour", "Pegasus Knight", "Mage" ],
+      "initialClass" : "Troubadour",
+      "name" : "Maribelle",
+      "sex" : "Female"
+    },
+    "Miriel" : {
+      "children" : [ "Laurent" ],
+      "classSet" : [ "Mage", "Troubadour", "Dark Mage" ],
+      "initialClass" : "Mage",
+      "name" : "Miriel",
+      "sex" : "Female"
+    },
+    "Morgan" : {
+      "name" : "Morgan"
+    },
+    "Nah" : {
+      "initialClass" : "Manakete",
+      "name" : "Nah",
+      "sex" : "Female"
+    },
+    "Noire" : {
+      "initialClass" : "Archer",
+      "name" : "Noire",
+      "sex" : "Female"
+    },
+    "Nowi" : {
+      "children" : [ "Nah" ],
+      "classSet" : [ "Manakete", "Mage", "Wyvern Rider" ],
+      "initialClass" : "Manakete",
+      "name" : "Nowi",
+      "sex" : "Female"
+    },
+    "Olivia" : {
+      "children" : [ "Inigo" ],
+      "classSet" : [ "Dancer", "Myrmidon", "Pegasus Knight" ],
+      "initialClass" : "Dancer",
+      "name" : "Olivia",
+      "sex" : "Female"
+    },
+    "Owain" : {
+      "initialClass" : "Myrmidon",
+      "name" : "Owain",
+      "sex" : "Male"
+    },
+    "Panne" : {
+      "children" : [ "Yarne" ],
+      "classSet" : [ "Taguel", "Wyvern Rider", "Thief" ],
+      "initialClass" : "Taguel",
+      "name" : "Panne",
+      "sex" : "Female"
+    },
+    "Priam" : {
+      "classSet" : [ "Mercenary", "Myrmidon", "Fighter" ],
+      "initialClass" : "Hero",
+      "name" : "Priam",
+      "sex" : "Male"
+    },
+    "Ricken" : {
+      "classSet" : [ "Mage", "Cavalier", "Archer" ],
+      "initialClass" : "Mage",
+      "name" : "Ricken",
+      "sex" : "Male"
+    },
+    "Say'ri" : {
+      "classSet" : [ "Myrmidon", "Pegasus Knight", "Wyvern Rider" ],
+      "initialClass" : "Swordmaster",
+      "name" : "Say'ri",
+      "sex" : "Female"
+    },
+    "Severa" : {
+      "initialClass" : "Mercenary",
+      "name" : "Severa",
+      "sex" : "Female"
+    },
+    "Stahl" : {
+      "classSet" : [ "Cavalier", "Archer", "Myrmidon" ],
+      "initialClass" : "Cavalier",
+      "name" : "Stahl",
+      "sex" : "Male"
+    },
+    "Sully" : {
+      "children" : [ "Kjelle" ],
+      "classSet" : [ "Cavalier", "Myrmidon", "Wyvern Rider" ],
+      "initialClass" : "Cavalier",
+      "name" : "Sully",
+      "sex" : "Female"
+    },
+    "Sumia" : {
+      "children" : [ "Cynthia" ],
+      "classSet" : [ "Pegasus Knight", "Knight", "Cleric" ],
+      "initialClass" : "Pegasus Knight",
+      "name" : "Sumia",
+      "sex" : "Female"
+    },
+    "Tharja" : {
+      "children" : [ "Noire" ],
+      "classSet" : [ "Dark Mage", "Knight", "Archer" ],
+      "initialClass" : "Dark Mage",
+      "name" : "Tharja",
+      "sex" : "Female"
+    },
+    "Tiki" : {
+      "classSet" : [ "Manakete", "Wyvern Rider", "Mage" ],
+      "initialClass" : "Manakete",
+      "name" : "Tiki",
+      "sex" : "Female"
+    },
+    "Vaike" : {
+      "classSet" : [ "Fighter", "Thief", "Barbarian" ],
+      "initialClass" : "Fighter",
+      "name" : "Vaike",
+      "sex" : "Male"
+    },
+    "Virion" : {
+      "classSet" : [ "Archer", "Myrmidon", "Wyvern Rider" ],
+      "initialClass" : "Archer",
+      "name" : "Virion",
+      "sex" : "Male"
+    },
+    "Yarne" : {
+      "initialClass" : "Taguel",
+      "name" : "Yarne",
+      "sex" : "Male"
+    }
+  },
+  "classes" : {
+    "Archer" : {
+      "baseStats" : {
+        "def" : 5,
+        "hp" : 16,
+        "mag" : 0,
+        "mov" : 5,
+        "res" : 0,
+        "skl" : 8,
+        "spd" : 6,
+        "str" : 5
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.45,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.3,
+        "spd" : 0.15,
+        "str" : 0.15
+      },
+      "maxStats" : {
+        "def" : 25,
+        "hp" : 60,
+        "lck" : 30,
+        "mag" : 20,
+        "res" : 21,
+        "skl" : 29,
+        "spd" : 25,
+        "str" : 26
+      },
+      "name" : "Archer",
+      "promote" : [ "Bow Knight", "Sniper" ],
+      "skills" : [ "Prescience", "Skill +2" ],
+      "weapons" : [ "Bow" ]
+    },
+    "Assassin" : {
+      "name" : "Assassin",
+      "skills" : [ "Lethality", "Pass" ],
+      "weapons" : [ "Sword", "Bow" ]
+    },
+    "Barbarian" : {
+      "name" : "Barbarian",
+      "promote" : [ "Berserker", "Warrior" ],
+      "skills" : [ "Despoil", "Gamble" ],
+      "weapons" : [ "Axe" ]
+    },
+    "Berserker" : {
+      "name" : "Berserker",
+      "skills" : [ "Axefaire", "Wrath" ],
+      "weapons" : [ "Axe" ]
+    },
+    "Bow Knight" : {
+      "baseStats" : {
+        "def" : 6,
+        "hp" : 24,
+        "mag" : 0,
+        "mov" : 8,
+        "res" : 2,
+        "skl" : 10,
+        "spd" : 10,
+        "str" : 8
+      },
+      "growthRates" : {
+        "def" : 0.05,
+        "hp" : 0.5,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.25,
+        "spd" : 0.2,
+        "str" : 0.2
+      },
+      "maxStats" : {
+        "def" : 35,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 30,
+        "res" : 30,
+        "skl" : 43,
+        "spd" : 41,
+        "str" : 40
+      },
+      "name" : "Bow Knight",
+      "skills" : [ "Bowbreaker", "Rally Skill" ],
+      "weapons" : [ "Bow", "Sword" ]
+    },
+    "Bride" : {
+      "name" : "Bride",
+      "skills" : [ "Bond", "Rally Heart" ],
+      "weapons" : [ "Lance", "Bow", "Staff" ]
+    },
+    "Cavalier" : {
+      "baseStats" : {
+        "def" : 7,
+        "hp" : 18,
+        "mag" : 0,
+        "mov" : 7,
+        "res" : 0,
+        "skl" : 5,
+        "spd" : 6,
+        "str" : 6
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.45,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.2,
+        "spd" : 0.2,
+        "str" : 0.2
+      },
+      "maxStats" : {
+        "def" : 26,
+        "hp" : 60,
+        "lck" : 30,
+        "mag" : 20,
+        "res" : 26,
+        "skl" : 25,
+        "spd" : 25,
+        "str" : 26
+      },
+      "name" : "Cavalier",
+      "promote" : [ "Paladin", "Great Knight" ],
+      "skills" : [ "Discipline", "Outdoor Fighter" ],
+      "weapons" : [ "Sword", "Lance" ]
+    },
+    "Cleric" : {
+      "name" : "Cleric",
+      "promote" : [ "Sage", "War Cleric" ],
+      "skills" : [ "Healtouch", "Miracle" ],
+      "weapons" : [ "Staff" ]
+    },
+    "Dancer" : {
+      "name" : "Dancer",
+      "skills" : [ "Luck +4", "Special Dance" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Dark Flier" : {
+      "name" : "Dark Flier",
+      "skills" : [ "Galeforce", "Rally Movement" ],
+      "weapons" : [ "Lance", "Tome" ]
+    },
+    "Dark Knight" : {
+      "name" : "Dark Knight",
+      "skills" : [ "Lifetaker", "Slowburn" ],
+      "weapons" : [ "Tome", "Sword" ]
+    },
+    "Dark Mage" : {
+      "name" : "Dark Mage",
+      "promote" : [ "Sorcerer", "Dark Knight" ],
+      "skills" : [ "Anathema", "Hex" ],
+      "weapons" : [ "Tome", "Dark" ]
+    },
+    "Dread Fighter" : {
+      "name" : "Dread Fighter",
+      "skills" : [ "Aggressor", "Resistance +10" ],
+      "weapons" : [ "Sword", "Axe", "Tome" ]
+    },
+    "Falcon Knight" : {
+      "name" : "Falcon Knight",
+      "skills" : [ "Lancefaire", "Rally Speed" ],
+      "weapons" : [ "Lance", "Staff" ]
+    },
+    "Fighter" : {
+      "name" : "Fighter",
+      "promote" : [ "Warrior", "Hero" ],
+      "skills" : [ "HP +5", "Zeal" ],
+      "weapons" : [ "Axe" ]
+    },
+    "General" : {
+      "baseStats" : {
+        "def" : 15,
+        "hp" : 28,
+        "mag" : 0,
+        "mov" : 5,
+        "res" : 3,
+        "skl" : 7,
+        "spd" : 4,
+        "str" : 12
+      },
+      "growthRates" : {
+        "def" : 0.15,
+        "hp" : 0.5,
+        "mag" : 0,
+        "res" : 0.1,
+        "skl" : 0.15,
+        "spd" : 0.1,
+        "str" : 0.25
+      },
+      "maxStats" : {
+        "def" : 50,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 30,
+        "res" : 35,
+        "skl" : 41,
+        "spd" : 35,
+        "str" : 50
+      },
+      "name" : "General",
+      "skills" : [ "Pavise", "Rally Defence" ],
+      "weapons" : [ "Lance", "Axe" ]
+    },
+    "Grandmaster" : {
+      "baseStats" : {
+        "def" : 7,
+        "hp" : 20,
+        "mag" : 6,
+        "mov" : 6,
+        "res" : 5,
+        "skl" : 7,
+        "spd" : 7,
+        "str" : 7
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.4,
+        "mag" : 0.15,
+        "res" : 0.1,
+        "skl" : 0.15,
+        "spd" : 0.15,
+        "str" : 0.15
+      },
+      "maxStats" : {
+        "def" : 40,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 40,
+        "res" : 40,
+        "skl" : 40,
+        "spd" : 40,
+        "str" : 40
+      },
+      "name" : "Grandmaster",
+      "skills" : [ "Ignis", "Rally Spectrum" ],
+      "weapons" : [ "Sword", "Tome" ]
+    },
+    "Great Knight" : {
+      "baseStats" : {
+        "def" : 14,
+        "hp" : 26,
+        "mag" : 0,
+        "mov" : 7,
+        "res" : 1,
+        "skl" : 6,
+        "spd" : 5,
+        "str" : 11
+      },
+      "growthRates" : {
+        "def" : 0.15,
+        "hp" : 0.5,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.15,
+        "spd" : 0.15,
+        "str" : 0.25
+      },
+      "maxStats" : {
+        "def" : 48,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 20,
+        "res" : 30,
+        "skl" : 34,
+        "spd" : 37,
+        "str" : 48
+      },
+      "name" : "Great Knight",
+      "skills" : [ "Dual Guard+", "Luna" ],
+      "weapons" : [ "Sword", "Lance", "Axe" ]
+    },
+    "Great Lord" : {
+      "baseStats" : {
+        "def" : 10,
+        "hp" : 23,
+        "mag" : 0,
+        "mov" : 6,
+        "res" : 3,
+        "skl" : 7,
+        "spd" : 9,
+        "str" : 10
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.4,
+        "mag" : 0,
+        "res" : 0.02,
+        "skl" : 0.2,
+        "spd" : 0.2,
+        "str" : 0.2
+      },
+      "maxStats" : {
+        "def" : 42,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 30,
+        "res" : 40,
+        "skl" : 40,
+        "spd" : 41,
+        "str" : 43
+      },
+      "name" : "Great Lord",
+      "skills" : [ "Aether", "Rightful King" ],
+      "weapons" : [ "Sword", "Lance" ]
+    },
+    "Griffon Rider" : {
+      "name" : "Griffon Rider",
+      "skills" : [ "Deliverer", "Lancebreaker" ],
+      "weapons" : [ "Axe" ]
+    },
+    "Hero" : {
+      "name" : "Hero",
+      "skills" : [ "Axebreaker", "Sol" ],
+      "weapons" : [ "Sword", "Axe" ]
+    },
+    "Knight" : {
+      "baseStats" : {
+        "def" : 11,
+        "hp" : 18,
+        "mag" : 0,
+        "mov" : 4,
+        "res" : 0,
+        "skl" : 4,
+        "spd" : 2,
+        "str" : 8
+      },
+      "growthRates" : {
+        "def" : 0.15,
+        "hp" : 0.5,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.15,
+        "spd" : 0.1,
+        "str" : 0.25
+      },
+      "maxStats" : {
+        "def" : 30,
+        "hp" : 60,
+        "lck" : 30,
+        "mag" : 20,
+        "res" : 22,
+        "skl" : 26,
+        "spd" : 23,
+        "str" : 30
+      },
+      "name" : "Knight",
+      "promote" : [ "Great Knight", "General" ],
+      "skills" : [ "Defense +2", "Indoor Fighter" ],
+      "weapons" : [ "Lance" ]
+    },
+    "Lodestar" : {
+      "name" : "Lodestar",
+      "weapons" : [ "Sword" ]
+    },
+    "Lord" : {
+      "baseStats" : {
+        "def" : 7,
+        "hp" : 18,
+        "mag" : 0,
+        "mov" : 5,
+        "res" : 0,
+        "skl" : 5,
+        "spd" : 7,
+        "str" : 6
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.4,
+        "mag" : 0,
+        "res" : 0.02,
+        "skl" : 0.2,
+        "spd" : 0.2,
+        "str" : 0.2
+      },
+      "maxStats" : {
+        "def" : 25,
+        "hp" : 60,
+        "lck" : 30,
+        "mag" : 20,
+        "res" : 25,
+        "skl" : 26,
+        "spd" : 28,
+        "str" : 25
+      },
+      "name" : "Lord",
+      "promote" : [ "Great Lord" ],
+      "skills" : [ "Charm", "Dual Strike+" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Mage" : {
+      "name" : "Mage",
+      "promote" : [ "Dark Knight", "Sage" ],
+      "skills" : [ "Focus", "Magic +2" ],
+      "weapons" : [ "Tome" ]
+    },
+    "Manakete" : {
+      "name" : "Manakete",
+      "skills" : [ "Odd Rhythm", "Wyrmsbane" ],
+      "weapons" : [ "Stone" ]
+    },
+    "Mercenary" : {
+      "name" : "Mercenary",
+      "promote" : [ "Hero", "Bow Knight" ],
+      "skills" : [ "Armsthrift", "Patience" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Myrmidon" : {
+      "name" : "Myrmidon",
+      "promote" : [ "Swordmaster", "Assassin" ],
+      "skills" : [ "Avoid +10", "Vantage" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Paladin" : {
+      "baseStats" : {
+        "def" : 10,
+        "hp" : 25,
+        "mag" : 1,
+        "mov" : 8,
+        "res" : 6,
+        "skl" : 7,
+        "spd" : 8,
+        "str" : 9
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.45,
+        "mag" : 0,
+        "res" : 0.1,
+        "skl" : 0.2,
+        "spd" : 0.2,
+        "str" : 0.2
+      },
+      "maxStats" : {
+        "def" : 42,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 30,
+        "res" : 42,
+        "skl" : 40,
+        "spd" : 40,
+        "str" : 42
+      },
+      "name" : "Paladin",
+      "skills" : [ "Aegis", "Defender" ],
+      "weapons" : [ "Sword", "Lance" ]
+    },
+    "Pegasus Knight" : {
+      "name" : "Pegasus Knight",
+      "promote" : [ "Falcon Knight", "Dark Flier" ],
+      "skills" : [ "Relief", "Speed +2" ],
+      "weapons" : [ "Lance" ]
+    },
+    "Priest" : {
+      "name" : "Priest",
+      "promote" : [ "Sage", "War Monk" ],
+      "skills" : [ "Healtouch", "Miracle" ],
+      "weapons" : [ "Staff" ]
+    },
+    "Sage" : {
+      "name" : "Sage",
+      "skills" : [ "Rally Magic", "Tomefaire" ],
+      "weapons" : [ "Tome", "Staff" ]
+    },
+    "Sniper" : {
+      "baseStats" : {
+        "def" : 10,
+        "hp" : 20,
+        "mag" : 1,
+        "mov" : 6,
+        "res" : 3,
+        "skl" : 12,
+        "spd" : 9,
+        "str" : 7
+      },
+      "growthRates" : {
+        "def" : 0.15,
+        "hp" : 0.45,
+        "mag" : 0,
+        "res" : 0.05,
+        "skl" : 0.3,
+        "spd" : 0.15,
+        "str" : 0.15
+      },
+      "maxStats" : {
+        "def" : 40,
+        "hp" : 80,
+        "lck" : 45,
+        "mag" : 30,
+        "res" : 31,
+        "skl" : 48,
+        "spd" : 40,
+        "str" : 41
+      },
+      "name" : "Sniper",
+      "skills" : [ "Bowfaire", "Hit Rate +20" ],
+      "weapons" : [ "Bow" ]
+    },
+    "Sorcerer" : {
+      "name" : "Sorcerer",
+      "skills" : [ "Tomebreaker", "Vengeance" ],
+      "weapons" : [ "Tome", "Dark" ]
+    },
+    "Swordmaster" : {
+      "name" : "Swordmaster",
+      "skills" : [ "Astra", "Swordfaire" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Tactician" : {
+      "baseStats" : {
+        "def" : 5,
+        "hp" : 16,
+        "mag" : 3,
+        "mov" : 5,
+        "res" : 3,
+        "skl" : 5,
+        "spd" : 5,
+        "str" : 4
+      },
+      "growthRates" : {
+        "def" : 0.1,
+        "hp" : 0.4,
+        "mag" : 0.15,
+        "res" : 0.1,
+        "skl" : 0.15,
+        "spd" : 0.15,
+        "str" : 0.15
+      },
+      "maxStats" : {
+        "def" : 25,
+        "hp" : 60,
+        "lck" : 30,
+        "mag" : 25,
+        "res" : 25,
+        "skl" : 25,
+        "spd" : 25,
+        "str" : 25
+      },
+      "name" : "Tactician",
+      "promote" : [ "Grandmaster" ],
+      "skills" : [ "Solidarity", "Veteran" ],
+      "weapons" : [ "Sword", "Tome" ]
+    },
+    "Taguel" : {
+      "name" : "Taguel",
+      "skills" : [ "Beastbane", "Even Rhythm" ],
+      "weapons" : [ "Stone" ]
+    },
+    "Thief" : {
+      "name" : "Thief",
+      "promote" : [ "Assassin", "Trickster" ],
+      "skills" : [ "Locktouch", "Movement +1" ],
+      "weapons" : [ "Sword" ]
+    },
+    "Trickster" : {
+      "name" : "Trickster",
+      "skills" : [ "Acrobat", "Lucky Seven" ],
+      "weapons" : [ "Sword", "Staff" ]
+    },
+    "Troubadour" : {
+      "name" : "Troubadour",
+      "promote" : [ "War Monk", "Valkyrie" ],
+      "skills" : [ "Demoiselle", "Resistance +2" ],
+      "weapons" : [ "Staff" ]
+    },
+    "Valkyrie" : {
+      "name" : "Valkyrie",
+      "skills" : [ "Dual Support+", "Rally Resistance" ],
+      "weapons" : [ "Tome", "Staff" ]
+    },
+    "Villager" : {
+      "name" : "Villager",
+      "skills" : [ "Aptitude", "Underdog" ],
+      "weapons" : [ "Lance" ]
+    },
+    "War Cleric" : {
+      "name" : "War Cleric",
+      "skills" : [ "Rally Luck", "Renewal" ],
+      "weapons" : [ "Staff", "Axe" ]
+    },
+    "War Monk" : {
+      "name" : "War Monk",
+      "skills" : [ "Rally Luck", "Renewal" ],
+      "weapons" : [ "Staff", "Axe" ]
+    },
+    "Warrior" : {
+      "name" : "Warrior",
+      "skills" : [ "Counter", "Rally Strength" ],
+      "weapons" : [ "Axe", "Bow" ]
+    },
+    "Wyvern Lord" : {
+      "name" : "Wyvern Lord",
+      "skills" : [ "Quick Burn", "Swordbreaker" ],
+      "weapons" : [ "Axe", "Lance" ]
+    },
+    "Wyvern Rider" : {
+      "name" : "Wyvern Rider",
+      "promote" : [ "Wyvern Lord", "Griffon Rider" ],
+      "skills" : [ "Strength +2", "Tantivy" ],
+      "weapons" : [ "Axe" ]
+    }
+  },
+  "skills" : {
+    "Acrobat" : {
+      "effect" : "All traversable terrain costs 1 movement point to cross",
+      "klass" : "Trickster",
+      "level" : 15,
+      "name" : "Acrobat"
+    },
+    "Aegis" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "skl"
+      },
+      "effect" : "Helves damage from bows, Tomes and dragonstones",
+      "klass" : "Paladin",
+      "level" : 15,
+      "name" : "Aegis"
+    },
+    "Aether" : {
+      "activation" : {
+        "chance" : 0.5,
+        "stat" : "skl"
+      },
+      "effect" : "Attack twice consecutively, with the first strike having a Sol effect and the second strike having a Luna effect",
+      "klass" : "Great Lord",
+      "level" : 5,
+      "name" : "Aether"
+    },
+    "Aggressor" : {
+      "effect" : "Attack +10 during the user’s Turn",
+      "klass" : "Dread Fighter",
+      "level" : 15,
+      "name" : "Aggressor"
+    },
+    "All Stats +2" : {
+      "effect" : "Strength, Magic, Skill, Speed, Luck, Defence and Resistance +2",
+      "name" : "All Stats +2"
+    },
+    "Anathema" : {
+      "effect" : "Avoid and Critical Avoid -10 to all enemies within a 3 tile radius",
+      "klass" : "Dark Mage",
+      "level" : 10,
+      "name" : "Anathema"
+    },
+    "Aptitude" : {
+      "effect" : "Adds 20% to all growth rates during Level Ups",
+      "klass" : "Villager",
+      "level" : 1,
+      "name" : "Aptitude"
+    },
+    "Armsthrift" : {
+      "activation" : {
+        "chance" : 2,
+        "stat" : "lck"
+      },
+      "effect" : "attack does not reduce weapon usage",
+      "klass" : "Mercenary",
+      "level" : 1,
+      "name" : "Armsthrift"
+    },
+    "Astra" : {
+      "activation" : {
+        "chance" : 0.5,
+        "stat" : "skl"
+      },
+      "effect" : "Deals 5 consecutive hits with half damage",
+      "klass" : "Swordmaster",
+      "level" : 5,
+      "name" : "Astra"
+    },
+    "Avoid +10" : {
+      "effect" : "Avoid +10",
+      "klass" : "Myrmidon",
+      "level" : 1,
+      "name" : "Avoid +10"
+    },
+    "Axebreaker" : {
+      "effect" : "Hit rate and Avoid +50 when the enemy is equipped with an Axe",
+      "klass" : "Hero",
+      "level" : 15,
+      "name" : "Axebreaker"
+    },
+    "Axefaire" : {
+      "effect" : "Strength +5 when equipped with an Axe (Magic +5 when equipped with the Bolt Axe)",
+      "klass" : "Berserker",
+      "level" : 15,
+      "name" : "Axefaire"
+    },
+    "Beastbane" : {
+      "effect" : "Deals effective damage to Beast units when user is a Taguel",
+      "klass" : "Taguel",
+      "level" : 15,
+      "name" : "Beastbane"
+    },
+    "Bond" : {
+      "effect" : "Restores 10 HP to all allies within a 3 tile radius at the beginning of the user’s Turn",
+      "klass" : "Bride",
+      "level" : 15,
+      "name" : "Bond"
+    },
+    "Bowbreaker" : {
+      "effect" : "Hit rate and Avoid +50 when the enemy is equipped with a bow",
+      "klass" : "Bow Knight",
+      "level" : 15,
+      "name" : "Bowbreaker"
+    },
+    "Bowfaire" : {
+      "effect" : "Strength +5 when equipped with a bow",
+      "klass" : "Sniper",
+      "level" : 15,
+      "name" : "Bowfaire"
+    },
+    "Charm" : {
+      "effect" : "Hit rate and Avoid +5 to all allies within a 3 tile radius",
+      "klass" : "Lord",
+      "level" : 10,
+      "name" : "Charm"
+    },
+    "Conquest" : {
+      "effect" : "Negates user’s beast and Armour type weaknesses",
+      "name" : "Conquest"
+    },
+    "Counter" : {
+      "effect" : "Returns damage when attacked by an adjacent enemy (except damage that KOs the user)",
+      "klass" : "Warrior",
+      "level" : 15,
+      "name" : "Counter"
+    },
+    "Defender" : {
+      "effect" : "All stats +1 when paired up",
+      "klass" : "Paladin",
+      "level" : 5,
+      "name" : "Defender"
+    },
+    "Defense +2" : {
+      "effect" : "Defense +2",
+      "klass" : "Knight",
+      "level" : 1,
+      "name" : "Defense +2"
+    },
+    "Deliverer" : {
+      "effect" : "Movement +2 when paired up",
+      "klass" : "Griffon Rider",
+      "level" : 5,
+      "name" : "Deliverer"
+    },
+    "Demoiselle" : {
+      "effect" : "Avoid and Critical Avoid +10 to all male allies within a 3 tile radius",
+      "klass" : "Troubadour",
+      "level" : 10,
+      "name" : "Demoiselle"
+    },
+    "Despoil" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "lck"
+      },
+      "effect" : "Obtain Bullion (S) from the enemy if the user defeats the enemy",
+      "klass" : "Barbarian",
+      "level" : 1,
+      "name" : "Despoil"
+    },
+    "Discipline" : {
+      "effect" : "Weapon experience x2",
+      "klass" : "Cavalier",
+      "level" : 1,
+      "name" : "Discipline"
+    },
+    "Dual Guard+" : {
+      "effect" : "Adds 10% to the Dual Guard rate",
+      "klass" : "Great Knight",
+      "level" : 15,
+      "name" : "Dual Guard+"
+    },
+    "Dual Strike+" : {
+      "effect" : "Adds 10% to the Dual Strike rate",
+      "klass" : "Lord",
+      "level" : 1,
+      "name" : "Dual Strike+"
+    },
+    "Dual Support+" : {
+      "effect" : "Increases the support bonus effect",
+      "klass" : "Valkyrie",
+      "level" : 15,
+      "name" : "Dual Support+"
+    },
+    "Even Rhythm" : {
+      "effect" : "Hit rate and Avoid +10 during even numbered Turns",
+      "klass" : "Taguel",
+      "level" : 1,
+      "name" : "Even Rhythm"
+    },
+    "Focus" : {
+      "effect" : "Critical +10 when no allies within a 3 tile radius",
+      "klass" : "Mage",
+      "level" : 10,
+      "name" : "Focus"
+    },
+    "Galeforce" : {
+      "effect" : "Allows the user another full action after they defeat an enemy during the user’s Turn (only once per Turn)",
+      "klass" : "Dark Flier",
+      "level" : 15,
+      "name" : "Galeforce"
+    },
+    "Gamble" : {
+      "effect" : "Hit rate -5, Critical +10",
+      "klass" : "Barbarian",
+      "level" : 10,
+      "name" : "Gamble"
+    },
+    "HP +5" : {
+      "effect" : "Maximum HP +5",
+      "klass" : "Fighter",
+      "level" : 1,
+      "name" : "HP +5"
+    },
+    "Healtouch" : {
+      "effect" : "Restores an extra 5 HP when healing allies",
+      "klass" : "Priest",
+      "level" : 10,
+      "name" : "Healtouch"
+    },
+    "Hex" : {
+      "effect" : "Avoid -15 to all adjacent enemies",
+      "klass" : "Dark Mage",
+      "level" : 1,
+      "name" : "Hex"
+    },
+    "Hit Rate +20" : {
+      "effect" : "Hit Rate +20",
+      "klass" : "Sniper",
+      "level" : 5,
+      "name" : "Hit Rate +20"
+    },
+    "Ignis" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "skl"
+      },
+      "effect" : "Adds (Magic)/2 to Strength when dealing physical damage and (Strength)/2 to Magic when dealing magical damage",
+      "klass" : "Grandmaster",
+      "level" : 5,
+      "name" : "Ignis"
+    },
+    "Indoor Fighter" : {
+      "effect" : "Hit rate and Avoid +10 when fighting indoors",
+      "klass" : "Knight",
+      "level" : 10,
+      "name" : "Indoor Fighter"
+    },
+    "Iote’s Shield" : {
+      "effect" : "Negates user’s Flying type weakness",
+      "name" : "Iote’s Shield"
+    },
+    "Lancebreaker" : {
+      "effect" : "Hit rate and Avoid +50 when the enemy is equipped with a Lance",
+      "klass" : "Griffon Rider",
+      "level" : 15,
+      "name" : "Lancebreaker"
+    },
+    "Lancefaire" : {
+      "effect" : "Strength +5 when equipped with a Lance (Magic +5 when equipped with the Shockstick)",
+      "klass" : "Falcon Knight",
+      "level" : 15,
+      "name" : "Lancefaire"
+    },
+    "Lethality" : {
+      "activation" : {
+        "chance" : 0.25,
+        "stat" : "skl"
+      },
+      "effect" : "Instantly defeats the enemy",
+      "klass" : "Assassin",
+      "level" : 5,
+      "name" : "Lethality"
+    },
+    "Lifetaker" : {
+      "effect" : "User recovers 50% HP after they defeat an enemy during the user’s Turn",
+      "klass" : "Dark Knight",
+      "level" : 15,
+      "name" : "Lifetaker"
+    },
+    "Limit Breaker" : {
+      "effect" : "Raises the character’s maximum stats by 10",
+      "name" : "Limit Breaker"
+    },
+    "Locktouch" : {
+      "effect" : "Open doors and chests without the need of keys",
+      "klass" : "Thief",
+      "level" : 1,
+      "name" : "Locktouch"
+    },
+    "Luck +4" : {
+      "effect" : "Luck +4",
+      "klass" : "Dancer",
+      "level" : 1,
+      "name" : "Luck +4"
+    },
+    "Lucky Seven" : {
+      "effect" : "Hit rate and Avoid +20 up to the 7th Turn",
+      "klass" : "Trickster",
+      "level" : 5,
+      "name" : "Lucky Seven"
+    },
+    "Luna" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "skl"
+      },
+      "effect" : "Ignores half of the enemy’s Defence or Resistance",
+      "klass" : "Great Knight",
+      "level" : 5,
+      "name" : "Luna"
+    },
+    "Magic +2" : {
+      "effect" : "Magic +2",
+      "klass" : "Mage",
+      "level" : 1,
+      "name" : "Magic +2"
+    },
+    "Miracle" : {
+      "effect" : "Character survives with 1 HP after receiving an attack that would otherwise KO them (must have over 1 HP)",
+      "klass" : "Priest",
+      "level" : 1,
+      "name" : "Miracle"
+    },
+    "Movement +1" : {
+      "effect" : "Movement +1",
+      "klass" : "Thief",
+      "level" : 10,
+      "name" : "Movement +1"
+    },
+    "Odd Rhythm" : {
+      "effect" : "Hit rate and Avoid +10 during odd numbered Turns",
+      "klass" : "Manakete",
+      "level" : 1,
+      "name" : "Odd Rhythm"
+    },
+    "Outdoor Fighter" : {
+      "effect" : "Hit rate and Avoid +10 when fighting outdoors",
+      "klass" : "Cavalier",
+      "level" : 10,
+      "name" : "Outdoor Fighter"
+    },
+    "Paragon" : {
+      "effect" : "Experience gain x2",
+      "name" : "Paragon"
+    },
+    "Pass" : {
+      "effect" : "User can pass through tiles occupied by enemy units",
+      "klass" : "Assassin",
+      "level" : 15,
+      "name" : "Pass"
+    },
+    "Patience" : {
+      "effect" : "Hit rate and Avoid +10 during the enemy’s turn",
+      "klass" : "Mercenary",
+      "level" : 10,
+      "name" : "Patience"
+    },
+    "Pavise" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "skl"
+      },
+      "effect" : "Halves damage from Swords, Lances, Axes (includes magical variants) and beaststones",
+      "klass" : "General",
+      "level" : 15,
+      "name" : "Pavise"
+    },
+    "Prescience" : {
+      "effect" : "Hit rate and Avoid +15 during the user's turn",
+      "klass" : "Archer",
+      "level" : 10,
+      "name" : "Prescience"
+    },
+    "Quick Burn" : {
+      "effect" : "Hit rate and Avoid +15 at the start of the chapter. Effect decreases with each pass Turn",
+      "klass" : "Wyvern Lord",
+      "level" : 5,
+      "name" : "Quick Burn"
+    },
+    "Rally Defence" : {
+      "activation" : "command",
+      "effect" : "Defence +4 to all allies within a 3 tile radius for one turn",
+      "klass" : "General",
+      "level" : 5,
+      "name" : "Rally Defence"
+    },
+    "Rally Heart" : {
+      "activation" : "command",
+      "effect" : "All stats +2 and Movement +1 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Bride",
+      "level" : 1,
+      "name" : "Rally Heart"
+    },
+    "Rally Luck" : {
+      "activation" : "command",
+      "effect" : "Luck +8 to all allies within a 3 tile radius for one Turn",
+      "klass" : "War Monk",
+      "level" : 5,
+      "name" : "Rally Luck"
+    },
+    "Rally Magic" : {
+      "activation" : "command",
+      "effect" : "Magic +4 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Sage",
+      "level" : 5,
+      "name" : "Rally Magic"
+    },
+    "Rally Movement" : {
+      "activation" : "command",
+      "effect" : "Movement +1 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Dark Flier",
+      "level" : 5,
+      "name" : "Rally Movement"
+    },
+    "Rally Resistance" : {
+      "activation" : "command",
+      "effect" : "Resistance +4 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Valkyrie",
+      "level" : 5,
+      "name" : "Rally Resistance"
+    },
+    "Rally Skill" : {
+      "activation" : "command",
+      "effect" : "Skill +4 to all allies within a 3 tile radius for one turn",
+      "klass" : "Bow Knight",
+      "level" : 5,
+      "name" : "Rally Skill"
+    },
+    "Rally Spectrum" : {
+      "effect" : "All stats +4 to all allies within a 3 tile radius for one Turn when the Rally command is used",
+      "klass" : "Grandmaster",
+      "level" : 15,
+      "name" : "Rally Spectrum"
+    },
+    "Rally Speed" : {
+      "activation" : "command",
+      "effect" : "Speed +4 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Falcon Knight",
+      "level" : 5,
+      "name" : "Rally Speed"
+    },
+    "Rally Strength" : {
+      "activation" : "command",
+      "effect" : "Strength +4 to all allies within a 3 tile radius for one Turn",
+      "klass" : "Warrior",
+      "level" : 5,
+      "name" : "Rally Strength"
+    },
+    "Relief" : {
+      "effect" : "Recover 20% HP at the start of the user’s Turn if no units are within a 3 tile radius",
+      "klass" : "Pegasus Knight",
+      "level" : 5,
+      "name" : "Relief"
+    },
+    "Renewal" : {
+      "effect" : "Recover 30% HP at the start of the user’s Turn",
+      "klass" : "War Monk",
+      "level" : 15,
+      "name" : "Renewal"
+    },
+    "Resistance +10" : {
+      "effect" : "Resistance +10",
+      "klass" : "Dread Fighter",
+      "level" : 1,
+      "name" : "Resistance +10"
+    },
+    "Resistance +2" : {
+      "effect" : "Resistance +2",
+      "klass" : "Troubadour",
+      "level" : 1,
+      "name" : "Resistance +2"
+    },
+    "Rightful King" : {
+      "effect" : "Adds 10% to Skill activation rates",
+      "klass" : "Great Lord",
+      "level" : 15,
+      "name" : "Rightful King"
+    },
+    "Shadowgift" : {
+      "effect" : "Enables usage of Dark Tomes for Tome wielders",
+      "name" : "Shadowgift"
+    },
+    "Skill +2" : {
+      "effect" : "Skill +2",
+      "klass" : "Archer",
+      "level" : 1,
+      "name" : "Skill +2"
+    },
+    "Slowburn" : {
+      "effect" : "Hit rate and Avoid increases by 1 each Turn, up to the 15th Turn",
+      "klass" : "Dark Knight",
+      "level" : 5,
+      "name" : "Slowburn"
+    },
+    "Sol" : {
+      "activation" : {
+        "chance" : 1,
+        "stat" : "skl"
+      },
+      "effect" : "Recover HP equal to half the damage dealt to the enemy",
+      "klass" : "Hero",
+      "level" : 5,
+      "name" : "Sol"
+    },
+    "Solidarity" : {
+      "effect" : "Critical and Critical Avoid +10 to adjacent allies",
+      "klass" : "Tactician",
+      "level" : 10,
+      "name" : "Solidarity"
+    },
+    "Special Dance" : {
+      "effect" : "Strength, Magic, Defence and Resistance +2 for one Turn for the unit who receives the user’s Dance",
+      "klass" : "Dancer",
+      "level" : 15,
+      "name" : "Special Dance"
+    },
+    "Speed +2" : {
+      "effect" : "Speed +2",
+      "klass" : "Pegasus Knight",
+      "level" : 1,
+      "name" : "Speed +2"
+    },
+    "Strength +2" : {
+      "effect" : "Strength +2",
+      "klass" : "Wyvern Rider",
+      "level" : 1,
+      "name" : "Strength +2"
+    },
+    "Swordbreaker" : {
+      "effect" : "Hit rate and Avoid +50 when the enemy is equipped with a Sword",
+      "klass" : "Wyvern Lord",
+      "level" : 15,
+      "name" : "Swordbreaker"
+    },
+    "Swordfaire" : {
+      "effect" : "Strength +5 when equipped with a Sword (Magic +5 when equipped with the Levin Sword",
+      "klass" : "Swordmaster",
+      "level" : 15,
+      "name" : "Swordfaire"
+    },
+    "Tantivy" : {
+      "effect" : "Hit rate and Avoid +10 if no allies are within a 3 tile radius",
+      "klass" : "Wyvern Rider",
+      "level" : 10,
+      "name" : "Tantivy"
+    },
+    "Tomebreaker" : {
+      "effect" : "Hit rate and Avoid +50 when the enemy is equipped with a Tome",
+      "klass" : "Sorcerer",
+      "level" : 15,
+      "name" : "Tomebreaker"
+    },
+    "Tomefaire" : {
+      "effect" : "Magic +5 when equipped with a Tome",
+      "klass" : "Sage",
+      "level" : 15,
+      "name" : "Tomefaire"
+    },
+    "Underdog" : {
+      "effect" : "Hit rate and Avoid +15 when user’s Level is lower than the enemy’s (promoted units count as Level +20)",
+      "klass" : "Villager",
+      "level" : 15,
+      "name" : "Underdog"
+    },
+    "Vantage" : {
+      "effect" : "When HP under half, always attack first during the enemy’s turn",
+      "klass" : "Myrmidon",
+      "level" : 10,
+      "name" : "Vantage"
+    },
+    "Vengeance" : {
+      "activation" : {
+        "chance" : 2,
+        "stat" : "skl"
+      },
+      "effect" : "Deals (user’s max HP - Current HP)/2 extra damage",
+      "klass" : "Sorcerer",
+      "level" : 5,
+      "name" : "Vengeance"
+    },
+    "Veteran" : {
+      "effect" : "Experience gain x 1.5 when paired up",
+      "klass" : "Tactician",
+      "level" : 1,
+      "name" : "Veteran"
+    },
+    "Wrath" : {
+      "effect" : "Critical +20 when under half HP",
+      "klass" : "Berserker",
+      "level" : 5,
+      "name" : "Wrath"
+    },
+    "Wyrmsbane" : {
+      "effect" : "Deals effective damage to Dragon units when user is a Manakete",
+      "klass" : "Manakete",
+      "level" : 15,
+      "name" : "Wyrmsbane"
+    },
+    "Zeal" : {
+      "effect" : "Critical +5",
+      "klass" : "Fighter",
+      "level" : 10,
+      "name" : "Zeal"
+    }
+  }
+}
