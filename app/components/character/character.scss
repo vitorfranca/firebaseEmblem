@@ -1,19 +1,18 @@
-character {
-    display: flex;
+@import "../../scss/card.scss";
 
-    .card {
-        flex: 0 1 auto;
-        max-height: 200px;
+.character-card {
+    @extend .card;
+    max-width: 150px;
+    margin: 5px;
 
-        .card-image {
-            .card-title {
-                color: #eee;
-                background: rgba(0, 0, 0, 0.7);
-                font-size: 18px;
-                line-height: 18px;
-                right: 0;
-                padding: 10px;
-            }
+    .card-image {
+        .card-title {
+            color: #eee;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 18px;
+            line-height: 18px;
+            right: 0;
+            padding: 10px;
         }
     }
 }
