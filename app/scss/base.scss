@@ -4,12 +4,13 @@ html,
 body {
 	background-color: $medium-brown;
 	color: $darker-brown;
-	font-family: arial;
+	font-family: 'Roboto', arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
+	font-weight: 600;
 	padding: 0;
 	margin: 10px;
 }
