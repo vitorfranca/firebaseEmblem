@@ -1,10 +1,18 @@
 <div>
-  <h2>Skills</h2>
-  <ul ng-repeat="val in skills">
-    <li>
-      <a ui-sref="^.details({name: val.name})">
-        {{val.name}}
-      </a>
-    </li>
-  </ul>
+    <h2>Skills</h2>
+    <ul class="flex-container direction-column" ng-repeat="skill in skills">
+        <li class="flex flex-container pv10">
+            <a class="mh5 flex-container flex justify-space-between align-center">
+                <span class="flex-container align-center" ui-sref="^.details({name: skill.name})">
+                    <img ng-src="/assets/img/skills/{{skill.name | lowercase}}.png" />
+                    <span class="mh10">{{skill.name}}</span>
+                </span>
+                <span class="ml10"
+                        ng-if="skill.klass"
+                        ui-sref="root.classes.details({name:skill.klass})">
+                    {{skill.klass}} level {{skill.level}}
+                </span>
+            </a>
+        </li>
+    </ul>
 </div>
