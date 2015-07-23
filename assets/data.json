@@ -904,7 +904,7 @@
         "chance" : 1,
         "stat" : "skl"
       },
-      "effect" : "Helves damage from bows, Tomes and dragonstones",
+      "effect" : "Halves damage from bows, Tomes and dragonstones",
       "klass" : "Paladin",
       "level" : 15,
       "name" : "Aegis"

@@ -1,0 +1,29 @@
+@for $i from 0 through 10 {
+    .m#{$i * 5}  { margin: 5 * $i+px; }
+    .mt#{$i * 5} { margin-top: 5 * $i+px; }
+    .mr#{$i * 5} { margin-right: 5 * $i+px; }
+    .mb#{$i * 5} { margin-bottom: 5 * $i+px; }
+    .ml#{$i * 5} { margin-left: 5 * $i+px; }
+    .mv#{$i * 5} {
+        margin-top: 5 * $i+px;
+        margin-bottom: 5 * $i+px;
+    }
+    .mh#{$i * 5} {
+        margin-left: 5 * $i+px;
+        margin-right: 5 * $i+px;
+    }
+
+    .p#{$i * 5}  { padding: 5 * $i+px; }
+    .pt#{$i * 5} { padding-top: 5 * $i+px; }
+    .pr#{$i * 5} { padding-right: 5 * $i+px; }
+    .pb#{$i * 5} { padding-bottom: 5 * $i+px; }
+    .pl#{$i * 5} { padding-left: 5 * $i+px; }
+    .pv#{$i * 5} {
+        padding-top: 5 * $i+px;
+        padding-bottom: 5 * $i+px;
+    }
+    .ph#{$i * 5} {
+        padding-left: 5 * $i+px;
+        padding-right: 5 * $i+px;
+    }
+}

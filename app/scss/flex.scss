@@ -26,7 +26,7 @@
 }
 
 .flex {
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 
     &.align-center   { align-self: center; }
     &.align-start    { align-self: flex-start; }
