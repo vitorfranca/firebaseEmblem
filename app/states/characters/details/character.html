@@ -48,33 +48,18 @@
         <attributes data="character.growthRates" percentage="true"></attributes>
     </div>
 
-    <div ng-show="character.children">
-        <h2>Children</h2>
-        <ul>
-            <li ng-repeat="child in character.children"
-                ui-sref=".({name:child})">
-                {{child}}
-            </li>
-        </ul>
+    <h2>Children</h2>
+    <div class="flex-container justify-start align-content-space-around" ng-show="character.children">
+        <character name="character" ng-repeat="character in character.children"></character>
     </div>
 
-    <div ng-show="character.marriable">
-        <h2>Can marry</h2>
-        <ul>
-            <li ng-repeat="partner in character.marriable"
-                ui-sref=".({name:partner})">
-                {{partner}}
-            </li>
-        </ul>
+    <h2>Can marry</h2>
+    <div class="flex-container justify-start align-content-space-around" ng-show="character.marriable">
+        <character name="character" ng-repeat="character in character.marriable"></character>
     </div>
 
-    <div ng-show="character.supports">
-        <h2>Supports</h2>
-        <ul>
-            <li ng-repeat="support in character.supports"
-                ui-sref=".({name:support})">
-                {{support}}
-            </li>
-        </ul>
+    <h2>Supports</h2>
+    <div class="flex-container justify-start align-content-space-around" ng-show="character.supports">
+        <character name="character" ng-repeat="character in character.supports"></character>
     </div>
 </div>

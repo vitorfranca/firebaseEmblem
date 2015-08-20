@@ -6,7 +6,15 @@ module.exports = angular.module('fire-emblem')
             templateUrl: 'app/components/character/character.html',
             replace: true,
             scope: {
-                character: "=data"
+                character: "=data",
+                name: "=?"
+            },
+            controller: function($scope, characters) {
+                if ($scope.name && !$scope.character) {
+                    characters.get($scope.name).then(function(data) {
+                        $scope.character = data;
+                    });
+                }
             }
         };
     });
