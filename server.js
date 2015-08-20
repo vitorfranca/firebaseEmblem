@@ -15,7 +15,7 @@ livereload(app, config = {
 //     .split(':')[0] + ':35729/livereload.js"></' + 'script>')
 // </script>
 
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 3333));
 
 app.use(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$ /index.html [L]']));
 
