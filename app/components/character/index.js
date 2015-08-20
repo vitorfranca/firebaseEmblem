@@ -7,9 +7,6 @@ module.exports = angular.module('fire-emblem')
             replace: true,
             scope: {
                 character: "=data"
-            },
-            controller: function ($scope) {
-
             }
         };
     });

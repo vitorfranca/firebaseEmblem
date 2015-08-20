@@ -35,30 +35,17 @@
 
     <div ng-show="character.baseStats">
         <h2>Base stats</h2>
-        <ul>
-            <li ng-repeat="(key, val) in character.baseStats">
-                {{key}}: {{val}}
-                <!-- <span ng-if="character.modifiers[key]">+ {{character.modifiers[key]}}</span> -->
-            </li>
-        </ul>
-    </div>
-
-    <div ng-show="character.growthRates">
-        <h2>Growth rates</h2>
-        <ul>
-            <li ng-repeat="(key, val) in character.growthRates">
-                {{key}}: {{val * 100 | number: 0}}%
-            </li>
-        </ul>
+        <attributes data="character.baseStats"></attributes>
     </div>
 
     <div ng-show="character.modifiers">
         <h2>Modifiers</h2>
-        <ul>
-            <li ng-repeat="(key, val) in character.modifiers">
-                {{key}}: {{val}}
-            </li>
-        </ul>
+        <attributes data="character.modifiers"></attributes>
+    </div>
+
+    <div ng-show="character.growthRates">
+        <h2>Growth rates</h2>
+        <attributes data="character.growthRates" percentage="true"></attributes>
     </div>
 
     <div ng-show="character.children">

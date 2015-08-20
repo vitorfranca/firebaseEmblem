@@ -1,0 +1,23 @@
+<ul ng-if="!percentage">
+    <li>HP:  {{ attributes.hp  || 0 }}</li>
+    <li>Str: {{ attributes.str || 0 }}</li>
+    <li>Mag: {{ attributes.mag || 0 }}</li>
+    <li>Skl: {{ attributes.skl || 0 }}</li>
+    <li>Spd: {{ attributes.spd || 0 }}</li>
+    <li>Def: {{ attributes.def || 0 }}</li>
+    <li>Res: {{ attributes.res || 0 }}</li>
+    <li>Lck: {{ attributes.lck || 0 }}</li>
+    <li>Mov: {{ attributes.mov || 0 }}</li>
+</ul>
+
+<ul ng-if="percentage">
+    <li>HP:  {{ attributes.hp  * 100 || 0 | number: 0 }}%</li>
+    <li>Str: {{ attributes.str * 100 || 0 | number: 0 }}%</li>
+    <li>Mag: {{ attributes.mag * 100 || 0 | number: 0 }}%</li>
+    <li>Skl: {{ attributes.skl * 100 || 0 | number: 0 }}%</li>
+    <li>Spd: {{ attributes.spd * 100 || 0 | number: 0 }}%</li>
+    <li>Def: {{ attributes.def * 100 || 0 | number: 0 }}%</li>
+    <li>Res: {{ attributes.res * 100 || 0 | number: 0 }}%</li>
+    <li>Lck: {{ attributes.lck * 100 || 0 | number: 0 }}%</li>
+    <li>Mov: {{ attributes.mov * 100 || 0 | number: 0 }}%</li>
+</ul>
