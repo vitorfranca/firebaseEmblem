@@ -5,9 +5,6 @@ var bodyParser = require('body-parser');
 var modRewrite = require('connect-modrewrite');
 var livereload = require('express-livereload');
 
-var static = require('node-static');
-new static.Server('');
-
 var app = express();
 
 livereload(app, config = {
@@ -23,7 +20,10 @@ app.set('port', (process.env.PORT || 3333));
 
 app.use(modRewrite(['!\\.html|\\.js|\\.svg|\\.css|\\.png$ /index.html [L]']));
 
-app.use('/', express.static(path.join(__dirname, '')));
+var dirname = process.cwd() || __dirname;
+console.log('dirname', dirname);
+
+app.use('/', express.static(path.join(dirname, '')));
 // app.use('/', express.static(path.join(__dirname, 'bower_components')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
