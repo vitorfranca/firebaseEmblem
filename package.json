@@ -10,7 +10,7 @@
         "watch-css": "gulp watch-css",
         "vendor-js": "watchify vendor.js -o assets/js/vendor.js",
         "watch-js": "watchify main.js -o assets/js/bundle.js",
-        "watch": "gulp sass:watch & npm run watch-css & npm run watch-js & npm run vendor-js &",
+        "watch": "npm run watch-css & npm run watch-js & npm run vendor-js &",
         "prestart": "npm run watch",
         "start": "node server.js",
         "clean": "mkdir assets; mkdir -p assets/css; mkdir -p assets/js",
