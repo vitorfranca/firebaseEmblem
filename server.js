@@ -2,14 +2,19 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
-var livereload = require('express-livereload');
+
+var livereload;
+if (process.env.ENV === 'dev') {
+    livereload = require('express-livereload');
+    livereload(app, config = {
+        watchDir: "assets"
+    });
+}
+
 var modRewrite = require('connect-modrewrite');
 
 var app = express();
 
-livereload(app, config = {
-    watchDir: "assets"
-});
 // <script>
 //   document.write('<script src="http://' + (location.host || 'localhost')
 //     .split(':')[0] + ':35729/livereload.js"></' + 'script>')
