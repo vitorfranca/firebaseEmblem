@@ -5,6 +5,9 @@ var bodyParser = require('body-parser');
 var modRewrite = require('connect-modrewrite');
 var livereload = require('express-livereload');
 
+var static = require('node-static');
+new static.Server('');
+
 var app = express();
 
 livereload(app, config = {

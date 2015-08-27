@@ -1,55 +1,56 @@
 {
-    "name": "firebase-emblem",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "private": true,
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "scss --watch app:app/css",
-        "watch-css": "gulp watch-css",
-        "vendor-js": "watchify vendor.js -o assets/js/vendor.js",
-        "watch-js": "watchify main.js -o assets/js/bundle.js",
-        "watch": "npm run sass & npm run watch-css & npm run watch-js & npm run vendor-js &",
-        "prestart": "npm run watch",
-        "start": "node server.js",
-        "clean": "rm -rf assets/css; rm -rf assets/js; mkdir -p assets/css; mkdir -p assets/js",
-        "build-css": "gulp",
-        "build-js": "browserify vendor.js -o assets/js/vendor.js; browserify main.js -o assets/js/bundle.js",
-        "build": "npm run clean; npm run build-css; npm run build-js",
-        "start:production": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vitorfranca/firebaseEmblem.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/vitorfranca/firebaseEmblem/issues"
-    },
-    "homepage": "https://github.com/vitorfranca/firebaseEmblem#readme",
-    "dependencies": {
-        "angular": "^1.4.3",
-        "angularfire": "^1.1.2",
-        "body-parser": "^1.13.2",
-        "browserify": "^11.0.1",
-        "connect-modrewrite": "^0.8.1",
-        "express": "^4.13.1",
-        "firebase": "^2.2.7",
-        "ui-router": "0.0.1",
-        "underscore": "^1.8.3",
-        "gulp": "^3.9.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-cssmin": "^0.1.7",
-        "gulp-strip-css-comments": "^1.1.0",
-        "gulp-watch": "^4.3.3",
-        "express-livereload": "0.0.24",
-        "watchify": "^3.3.0"
-    },
-    "browser": {
-        "angular": "./node_modules/angular/angular.min.js",
-        "angularfire": "./node_modules/angularfire/dist/angularfire.min.js",
-        "underscore": "./node_modules/underscore/underscore-min.js"
-    }
+  "name": "firebase-emblem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "scss --watch app:app/css",
+    "watch-css": "gulp watch-css",
+    "vendor-js": "watchify vendor.js -o assets/js/vendor.js",
+    "watch-js": "watchify main.js -o assets/js/bundle.js",
+    "watch": "npm run sass & npm run watch-css & npm run watch-js & npm run vendor-js &",
+    "prestart": "npm run watch",
+    "start": "node server.js",
+    "clean": "rm -rf assets/css; rm -rf assets/js; mkdir -p assets/css; mkdir -p assets/js",
+    "build-css": "gulp",
+    "build-js": "browserify vendor.js -o assets/js/vendor.js; browserify main.js -o assets/js/bundle.js",
+    "build": "npm run clean; npm run build-css; npm run build-js",
+    "start:production": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorfranca/firebaseEmblem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorfranca/firebaseEmblem/issues"
+  },
+  "homepage": "https://github.com/vitorfranca/firebaseEmblem#readme",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angularfire": "^1.1.2",
+    "body-parser": "^1.13.2",
+    "browserify": "^11.0.1",
+    "connect-modrewrite": "^0.8.1",
+    "express": "^4.13.1",
+    "express-livereload": "0.0.24",
+    "firebase": "^2.2.7",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-strip-css-comments": "^1.1.0",
+    "gulp-watch": "^4.3.3",
+    "node-static": "^0.7.7",
+    "ui-router": "0.0.1",
+    "underscore": "^1.8.3",
+    "watchify": "^3.3.0"
+  },
+  "browser": {
+    "angular": "./node_modules/angular/angular.min.js",
+    "angularfire": "./node_modules/angularfire/dist/angularfire.min.js",
+    "underscore": "./node_modules/underscore/underscore-min.js"
+  }
 }
