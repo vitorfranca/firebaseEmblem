@@ -38,15 +38,13 @@
         "express": "^4.13.1",
         "firebase": "^2.2.7",
         "ui-router": "0.0.1",
-        "underscore": "^1.8.3"
-    },
-    "devDependencies": {
-        "express-livereload": "0.0.24",
+        "underscore": "^1.8.3",
         "gulp": "^3.9.0",
         "gulp-concat": "^2.6.0",
         "gulp-cssmin": "^0.1.7",
         "gulp-strip-css-comments": "^1.1.0",
         "gulp-watch": "^4.3.3",
+        "express-livereload": "0.0.24",
         "watchify": "^3.3.0"
     },
     "browser": {
