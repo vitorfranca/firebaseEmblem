@@ -14,7 +14,7 @@
         "prestart": "npm run watch",
         "start": "node server.js",
         "clean": "rm -rf assets/css; rm -rf assets/js; mkdir -p assets/css; mkdir -p assets/js",
-        "build-css": "gulp minify-css",
+        "build-css": "gulp",
         "build-js": "browserify vendor.js -o assets/js/vendor.js; browserify main.js -o assets/js/bundle.js",
         "build": "npm run clean; npm run build-css; npm run build-js",
         "start:production": "node server.js"
