@@ -13,8 +13,8 @@
         "watch": "npm run sass & npm run watch-css & npm run watch-js & npm run vendor-js &",
         "prestart": "npm run watch",
         "start": "node server.js",
-        "clean": "rm -rf assets/css; rm -rf assets/js; mkdir -p assets/css; mkdir -p assets/js",
-        "build-css": "gulp",
+        "clean": "mkdir assets; mkdir -p assets/css; mkdir -p assets/js",
+        "build-css": "scss app:app/css; gulp",
         "build-js": "browserify vendor.js -o assets/js/vendor.js; browserify main.js -o assets/js/bundle.js",
         "build": "npm run clean; npm run build-css; npm run build-js",
         "start:production": "node server.js"
