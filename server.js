@@ -2,18 +2,17 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
+var modRewrite = require('connect-modrewrite');
+
+var app = express();
 
 var livereload;
-if (process.env.ENV === 'dev') {
+if (process.env.NODE_ENV !== 'production') {
     livereload = require('express-livereload');
     livereload(app, config = {
         watchDir: "assets"
     });
 }
-
-var modRewrite = require('connect-modrewrite');
-
-var app = express();
 
 // <script>
 //   document.write('<script src="http://' + (location.host || 'localhost')

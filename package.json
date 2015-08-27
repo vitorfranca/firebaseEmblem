@@ -12,7 +12,8 @@
         "watch-js": "watchify main.js -o assets/js/bundle.js",
         "watch": "npm run sass & npm run watch-css & npm run watch-js & npm run vendor-js &",
         "prestart": "npm run watch",
-        "start": "node server.js"
+        "start": "node server.js",
+        "start:production": "node server.js"
     },
     "repository": {
         "type": "git",
